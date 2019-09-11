@@ -1,0 +1,170 @@
+/*General*/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  background-color: black;
+}
+@media (min-width: 600px){
+  body{
+    padding: 5px;
+  }
+}
+.espejo img{
+-moz-transform: scaleX(-1); /* Firefox */
+-o-transform: scaleX(-1); /* Opera */
+-webkit-transform: scaleX(-1); /* Chrome y Safari */
+transform: scaleX(-1); /* w3org */
+filter: FlipH; /* Internet Explorer */
+}
+header{
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+}
+header h1{
+  text-align: center;
+  color: black;
+    margin: 0px;
+}
+header img{
+  width: 100%;
+}
+@media (min-width :600px){
+  header h1{
+    text-align: center;
+    color: red;
+    height: 70px;
+  }
+}
+h2{
+  text-align: center;
+  margin: 20px auto;
+}
+img{
+  max-width: 100%;
+}
+.contenedor{
+  max-width: 80%;
+  margin: 0 auto;
+}
+/***************seccion***************/
+
+.beside {
+}
+@media (min-width: 600px) {
+  .beside {
+    position: absolute;
+    left: 0px;
+    width: 10%;
+  }
+}
+.beside ul{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #8e8383;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+@media (min-width: 600px) {
+  .beside ul{
+    border-radius: inherit;
+    display: block;
+    }
+  }
+.beside li, a{
+      list-style: none;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+      margin-top: 0;
+    }
+/*Fragua**Arañas*/
+@media (min-width: 600px) {
+  .fragua-f{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+.ver {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 600px){
+  .ver{
+    width: 100%;
+  }
+}
+.ver > div{
+    border: 1px solid #8e8383;
+}
+.hide{
+  display: none;
+}
+.tc{
+  border-radius: 10px;
+  border-top: 1px solid #909090;
+  border-bottom: 1px solid #909090;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80vh;
+  width: 100vw;
+  transition: .3s;
+}
+.tc p:first-child{
+  padding-top: 10vh;
+}
+.tc p{
+  text-align: center;
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-55deg) saturate(600%) contrast(1.8);
+}
+img{
+  width: 50%;
+}
+.item img{
+  width: 10%;
+}
+/*Fragua**Arañas*/
+/*Muros*/
+form{
+  text-align: center;
+  color: white;
+}
+input.tx{
+  width: 70%;
+  height: 30px;
+  margin-bottom: 5px;
+}
+.wall{
+  margin-top: 5px;
+  text-align: center;
+  color: white;
+}
+.block{
+  background-color:  gray;
+  border-bottom: 2px solid black;
+  display: grid;
+}
+.block p{
+  margin: 5px auto;
+}
+/*Muros*/
+/*Menhires*/
+.menhir{
+  background-color: gray;
+}
+/*Menhires*/

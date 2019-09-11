@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="icon" href="d.ico">
+  <link rel="stylesheet" href="../css/misc.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="muro-a.js" charset="utf-8"></script>
+  <title>TES</title>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <img src="../dagl.png" alt="" width="100%">
+    </div>
+    <div class="">
+      <h1> <a href="../index.html">Muros</a> </h1>
+    </div>
+    <div class="espejo">
+      <img src="../dagl.png" alt="" width="100%">
+    </div>
+  </header>
+  <section class="seccion">
+    <div class="beside">
+      <nav>
+        <ul>
+          <li> <a href="arañas.html">Arañas</a></li>
+          <li> <a href="barenziah.html">Piedras de barenziah</a></li>
+          <li> <a href="fragua.html">Forja del Atronach  </a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+<form class="" action="muro-g.php" method="post">
+  <label for="muro">muro</label>
+  <input type="text" class="tx" name="muro" value=""> <br>
+  <label for="grito">grito</label>
+  <input type="text" class="tx" name="grito" value=""> <br>
+  <label for="teto">texto</label>
+  <textarea name="texto" rows="10" cols="40"> </textarea><br>
+  <input type="submit" name="" value="sve">
+</form>
+<form class="" action="del.php" method="post">
+  <input type="submit" name="" value="del" >
+  <input type="text" name="del" value="">
+</form>
+
+  <div class="wall" id="ver">
+  </div>
+</body>
+</html>

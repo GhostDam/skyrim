@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="icon" href="d.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/alchemy.js" charset="utf-8"></script>
+  <script src="ajax.js" charset="utf-8"></script>
+  <title>TES</title>
+</head>
+<body>
+  <header>
+    <div class="">
+      <img src="dagl.png" alt="" width="100%">
+    </div>
+    <div class="">
+      <h1>Alquimia</h1>
+    </div>
+    <div class="espejo">
+      <img src="dagl.png" alt="" width="100%">
+    </div>
+  </header>
+  <section class="seccion">
+    <div class="beside">
+      <nav>
+        <ul>
+          <li> <a href="index.html">Dragon</a></li>
+          <li> <a href="daedra.html">Daedra</a></li>
+          <li> <a href="alquimia.html">Alquimia</a></li>
+          <li> <a href="miscelanea/indice.html">Varios</a></li>
+        </ul>
+      </nav>
+    </div>
+    <form class="contenedor" action="alquimia-g.php" method="post">
+      <label for="pocion">pocion</label>
+      <input type="text" name="pocion" value=""> <br>
+      <label for="ingrediente1">ingrediente1</label>
+      <input type="text" name="ingrediente1" value=""> <br>
+      <label for="ingrediente2">ingrediente2</label>
+      <input type="text" name="ingrediente2" value=""> <br>
+      <label for="ingrediente3">ingrediente3</label>
+      <input type="text" name="ingrediente3" value=""> <br>
+      <label for="valor">valor</label>
+      <input type="text" name="valor" value=""> <br>
+      <input type="submit" name="" value="sve">
+    </form>
+
+    <form class="" action="del.php" method="post">
+      <input type="submit" name="" value="del" >
+      <input type="text" name="del" value="">
+    </form>
+    <h2>Alquimia lvl 100 sin attrs</h2>
+    <div class="contenedor ing" id="ver">
+
+    </div>
+    <div class="contenedor alc-t">
+      <p>colmillo</p><span>+</span><p>Huevo cauro</p><span>+</span><p>musgo colgante</p><span>=</span><p>5475</p>
+      <p>colmillo</p><span>+</span><p>trigo</p><span>+</span><p>Ajo</p><span>=</span><p>5261</p>
+      <p>colmillo</p><span>+</span><p>trigo</p><span>+</span><p>huevo asesino</p><span>=</span><p>5261</p>
+      <p>colmillo</p><span>+</span><p>trigo</p><span>+</span><p>huevo cauro</p><span>=</span><p>5261</p>
+      <p>colmillo</p><span>+</span><p>trigo</p><span>+</span><p>Lavanda</p><span>=</span><p>5261</p>
+      <p>colmillo</p><span>+</span><p>huevo cauro</p><span>+</span><p>dedo</p><span>=</span><p>5261</p>
+      <p>colmillo</p><span>+</span><p>huevo cauro</p><span>+</span><p>Lavanda</p><span>=</span><p>5261</p>
+      <p>colmillo</p><span>+</span><p>huevo cauro</p><span>+</span><p>seta brillante</p><span>=</span><p>5261</p>
+      <p>colmillo</p><span>+</span><p>huevo cauro</p><span>+</span><p>flor azul</p><span>=</span><p>5261</p>
+      <p>colmillo</p><span>+</span><p>huevo cauro</p><span>+</span><p>Garras oso</p><span>=</span><p>5261</p>
+      <p>colmillo</p><span>+</span><p>huevo cauro</p><span>+</span><p>ala de actias</p><span>=</span><p>4312</p>
+      <p>colmillo</p><span>+</span><p>huevo cauro</p><span>+</span><p>diente hielo</p><span>=</span><p>4098</p>
+      <p>foliota</p><span>+</span><p>mora</p><span>+</span><p>raiz trama</p><span>=</span><p>2483</p>
+      <p>amanita</p><span>+</span><p>lengua</p><span>+</span><p>foliota</p><span>=</span><p>2462</p>
+      <p>amanita</p><span>+</span><p>lengua</p><span>+</span><p>mora</p><span>=</span><p>2462</p>
+      <p>belladama</p><span>+</span><p>flor azul</p><span>+</span><p>seta brillante</p><span>=</span><p>2310</p>
+      <p>foliota</p><span>+</span><p>raiz trepadora</p><span>+</span><p>amanita</p><span>=</span><p>2203</p>
+      <!------------------------>
+      <p>dedo</p><span>+</span><p>trigo</p><span>+</span><p>pico halcon</p>=<p>4025</p>
+      <p>dedo</p><span>+</span><p>trigo</p><span>+</span><p>raiz trama</p>=<p>4025</p>
+      <p>dedo</p><span>+</span><p>trigo</p><span>+</span><p>raiz trepadora</p>=<p>4025</p>
+      <p>dedo</p><span>+</span><p>trigo</p><span>+</span><p>Enseres fuego</p>=<p>4025</p>
+      <p>colmillo</p><span>+</span><p>huevo cauro</p><span>+</span><p>diente hielo</p>=<p>2499</p>
+      <p>betty</p><span>+</span><p>heces</p><span>+</span><p>vaina fungica</p>=<p>2091</p>
+      <p></p><span></span><p></p><p></p>
+
+    </div>
+  </section>
+  <!--verificar por nivel-->
+  <div class="contenedor">
+    <h2>ingredientes</h2>
+    <div class="input">
+      <input type="text" name="search" id="search" placeholder="ing"/>
+    </div>
+    <div id="ing" class="ing">
+    </div>
+    <h2>efectos</h2>
+    <div class="input">
+      <input type="text" name="busefe" id="busefe" placeholder="ing"/>
+    </div>
+    <div id="efe" class="efe">
+    </div>
+    <br>
+  </div>
+
+  <div class="contenedor comen">
+    <div>
+      <p>Betty de Rio (2.5×Magnitud): Pociones de dañar salud que incluyan Betty de Rio tendran una magnitud 2.5 veces mejor que una pocion de dañar salud standard  (e.g., 30 magnitude en alquimia 100). el costo en oro de la pocion tambien se ve afectado</p> <br>
+      <p> Hay 3 tipos de veneno <br>
+        Daño: <br>
+        Daño concentrado: <br>
+        Daño duradero: <br>
+        Por ejemplo:
+        1) Dañar salud quita vida. Ejemplo: Veneno 20 puntos de daño y enemigo de 100/100 puntos de salud. El enemigo se quedará con 80/100 de salud. Lo mismo con el de magia y aguante. <br>
+        2) Dañar salud concentrado no quita la vida en sí, sino que reduce el limite total de vida. Ejemplo: Veneno 20 puntos de daño concentrado y enemigo de 100/100 puntos de salud. El enemigo se quedará con 80/80 de salud.
+        <br>
+        3) Dañar salud duradero quita un poco de vida cada segundo durante un limite de tiempo. Ejemplo: Veneno 5 puntos de daño durante 5 segundos y enemigo de 100/100 puntos de salud. Al cabo de 5 segundos la vida del enemigo será 75/100. Lo mismo con el de magia y aguante.
+        </p>
+      </div>
+      <div>
+        <p>Raiz de Nirn (12.6×Valor): Pociones de dañar salud que incluyan Raiz de Nirn tendran un valor en oro 12.6 mejor que una pocion standard, aunque la magnitud de la pocion sera la misma.</p>
+        <p>- Venenos de Miedo y Furia escalan con perks en la rama de Ilusión para ser más efectivos.
+          <br>
+        - Los venenos de dañar magia y aguante serán de máximo 160 más o menos. Y los de salud de 90 más o menos, pero hay un ingrediente especial llamado "Betty de rio" que te permitirá hacer pociones de dañar salud de un máximo de 160 más o menos.
+        <br>
+        - Los de dañar salud/magia/aguante concentrado tienen el limite en el 60 más o menos.
+        <br>
+        - Ahora viene lo bestia. Los venenos de Dañar salud/magia/aguante duradero quitan 32 puntos durante 10 segundo viniendo a ser 320 puntos de salud/magia/aguante por la cara. Con esto podéis dejar seco de aguante a un guerrero o de magia a un mago y chulearos en su cara, sin casi peligro (Es recomendable robarles el equipo previamente para evitar es posible peligro). Y encima si previamente le habéis envenenado con daño al 100% la regeneración de aguante y magia, no la recuperaran durante un gran periodo de tiempo.
+        </p>
+      </div>
+    </div>
+  </body>
+  </html>
+
+  <!--2 ingredientes mejor valorados en conjunto-->
+  <!-- <div class="contenedor alc-t2">
+    <p>colmillo</p><span>+</span><p>ajo</p>=<p>2742</p>
+    <p>colmillo</p><span>+</span><p>huevo asesino</p>=<p>2742</p>
+    <p>colmillo</p><span>+</span><p>flor azul</p>=<p>2518</p>
+    <p>colmillo</p><span>+</span><p>garra oso</p>=<p>2518</p>
+  </div> -->
